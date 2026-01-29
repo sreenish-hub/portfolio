@@ -290,13 +290,6 @@ section {
 }
 
 .skills-slider {
-    /* Resetting slider to grid */
-    overflow: visible; 
-}
-
-.skills-track {
-    /* Changed from linear flex to Grid */
-    display: grid;
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
@@ -307,19 +300,22 @@ section {
 }
 
 .skills-track {
-    display: flex;
+    display: flex; /* Ensure flex for marquee */
     gap: 32px;
-    width: max-content;
+    width: max-content; /* Allow track to expand */
     animation: scroll 40s linear infinite;
+    /* Remove grid/mask properties from here */
 }
+
+/* .skills-track defined above */
 
 .skills-track:hover {
     animation-play-state: paused;
 }
 
 @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-50%, 0, 0); }
 }
 
 .skill-card {
