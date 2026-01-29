@@ -4,44 +4,47 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sreenish | Portfolio</title>
+    <title>Sreenish T | Premium Web Developer</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Navbar -->
+    <!-- Navbar -->
     <nav class="navbar">
-        <div class="logo">SREENISH</div>
-        <input type="checkbox" id="menu-toggle" hidden>
-        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="container">
+            <div class="logo">SREENISH.</div>
+            <input type="checkbox" id="menu-toggle" hidden>
+            <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#projects">Selected Works</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li> 
+            </ul>
+        </div>
     </nav>
 
     <!-- Hero Section -->
-    <div id="particles-js">
-        <section class="hero">
-            <div class="hero-left">
-                <p class="tagline">WE DESIGN & BUILD BRANDS</p>
-                <h1>Hi, I am <span>SREENISH.T</span> <br>I build responsive & modern websites.</h1>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="tagline">Premium Web Development</span>
+                <h1>Building Digital Products<br>That <span style="color: var(--accent);">Define The Future.</span></h1>
+                <p class="subtext">
+                    I build high-performance landing pages and portfolios that turn visitors into clients. Clean code, premium design, and results-driven development.
+                </p>
                 <div class="buttons">
-                    <a href="#" class="btn primary">Hire me</a>
-                    <a href="" class="btn outline" download>Download CV</a>
+                    <a href="#contact" class="btn primary">Hire Me</a>
+                    <a href="#projects" class="btn outline">View Selected Works</a>
                 </div>
             </div>
-            <div class="hero-right">
-                <div class="bg-skew"></div>
-                <img src="./assets/main sec image.jpg" alt="Sreenish" />
-            </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
 
     <!-- About Section -->
@@ -49,35 +52,26 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-img">
-                    <img src="./assets/intro sec image.jpg" alt="Profile Picture">
+                    <img src="./assets/main sec image.jpg" alt="Sreenish T - Web Developer">
                 </div>
                 <div class="about-content">
-                    <h5 class="section-subtitle">MY INTRODUCTION</h5>
-                    <h2>About Me</h2>
+                    <h5 class="section-subtitle">WHO I AM</h5>
+                    <h2>Premium Web Developer</h2>
                     <p>
-                       I’m Sreenish T, a full stack developer from Kerala. I enjoy building 
-                       responsive and user-friendly websites, working on both frontend and backend. 
-                       Skilled in HTML, CSS, JavaScript, Node.js, and MongoDB, I have hands-on experience creating a 
-                       fashion e-commerce site and my personal portfolio. I’m passionate about clean UI,
-                        mobile-first design, and always eager to grow while learning new technologies every day.
-
+                        I am Sreenish T, a Full Stack Developer focused on building specialized, high-end web experiences. 
+                        I don't just write code; I design solutions that help brands stand out.
+                    </p>
+                    <p>
+                        With expertise in modern frontend technologies like React and Tailwind, alongside robust backend skills in Node.js,
+                        I create websites that are fast, responsive, and built to scale. Whether you need a converting landing page
+                        or a complex web application, I deliver studio-quality results.
                     </p>
 
-                    <p><em>“Where elegant design meets clean code.”</em></p>
-
-
-                    <div class="about-details">
-                        <p><strong>Name:</strong> Sreenish T</p>
-                        <p><strong>Date of birth:</strong> October 13 2007</p>
-                        <p><strong>Address:</strong> Palakkad, Kerala, India</p>
-                        <p><strong>Email:</strong> sreenish431@gmail.com</p>
-                        <p><strong>Phone:</strong> +91-85904-66462</p>
-                    </div>
                     <div class="interests">
-                        <span><i class="fas fa-music"></i> Music</span>
-                        <span><i class="fas fa-plane"></i> Travel</span>
-                        <span><i class="fas fa-film"></i> Movie</span>
-                        <span><i class="fas fa-book-open"></i> Reading</span>
+                         <!-- Simplified interests/value props -->
+                        <span><i class="fas fa-bolt"></i> Performance First</span>
+                        <span><i class="fas fa-mobile-alt"></i> Mobile Optimized</span>
+                        <span><i class="fas fa-code"></i> Clean Architecture</span>
                     </div>
                 </div>
             </div>
@@ -85,104 +79,88 @@
     </section>
 
     <section id="skills" class="skills-section">
-        <h2>My Skills</h2>
+        <h2>My Tool Stack</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
+            I use modern tools to build scalable, high-performance applications.
+        </p>
         <div class="skills-slider">
-            <div class="skills-track">
-                <!-- Skill Cards x2 for seamless loop -->
-                <!-- 1st Set -->
-                <div class="skill-card">
-                    <img src="./assets/html.png" loading="lazy" class="skill-icon" alt="HTML" />
-                    <h4>HTML</h4>
-                    <div class="level-label">95%</div>
-                </div>
-                <div class="skill-card">
-                    <img src="./assets/css.png" loading="lazy" class="skill-icon" alt="CSS" />
-                    <h4>CSS</h4>
-                    <div class="level-label">92%</div>
-                </div>
-                <div class="skill-card">
-                    <img src="./assets/javascript.png" loading="lazy" class="skill-icon" alt="JavaScript" />
-                    <h4>JavaScript</h4>
-                    <div class="level-label">80%</div>
-                </div>
-                <div class="skill-card">
-                    <img src="./assets/bootstrap.png" loading="lazy" class="skill-icon" alt="Bootstrap" />
-                    <h4>Bootstrap</h4>
-                    <div class="level-label">90%</div>
-                </div>
-                <div class="skill-card">
-                    <img src="./assets/react.png" loading="lazy" class="skill-icon" alt="React" />
-                    <h4>React</h4>
-                    <div class="level-label">78%</div>
-                </div>
-                <div class="skill-card">
-                    <img src="./assets/figma.png" loading="lazy" class="skill-icon" alt="Figma" />
-                    <h4>Figma</h4>
-                    <div class="level-label">60%</div>
-                </div>
-                <div class="skill-card">
-                    <img src="./assets/java.png" loading="lazy" class="skill-icon" alt="Java" />
-                    <h4>Java</h4>
-                    <div class="level-label">75%</div>
-                </div>
-                <div class="skill-card">
-                    <img src="./assets/node js.png" loading="lazy" class="skill-icon" alt="Node JS" />
-                    <h4>Node JS</h4>
-                    <div class="level-label">70%</div>
-                </div>
-                <div class="skill-card">
-                    <img src="./assets/github.png" loading="lazy" class="skill-icon" alt="GitHub" />
-                    <h4>GitHub</h4>
-                    <div class="level-label">70%</div>
-                </div>
-
-                <!-- Duplicate set -->
-                <div class="skill-card">
-                    <img src="./assets/html.png" loading="lazy" class="skill-icon" alt="HTML" />
-                    <h4>HTML</h4>
-                    <div class="level-label">95%</div>
-                </div>
-                <div class="skill-card">
-                    <img src="./assets/css.png" loading="lazy" class="skill-icon" alt="CSS" />
-                    <h4>CSS</h4>
-                    <div class="level-label">92%</div>
-                </div>
-                <div class="skill-card">
-                    <img src="./assets/javascript.png" loading="lazy" class="skill-icon" alt="JavaScript" />
-                    <h4>JavaScript</h4>
-                    <div class="level-label">80%</div>
-                </div>
-                <div class="skill-card">
-                    <img src="./assets/bootstrap.png" loading="lazy" class="skill-icon" alt="Bootstrap" />
-                    <h4>Bootstrap</h4>
-                    <div class="level-label">90%</div>
-                </div>
-                <div class="skill-card">
-                    <img src="./assets/react.png" loading="lazy" class="skill-icon" alt="React" />
-                    <h4>React</h4>
-                    <div class="level-label">78%</div>
-                </div>
-                <div class="skill-card">
-                    <img src="./assets/figma.png" loading="lazy" class="skill-icon" alt="Figma" />
-                    <h4>Figma</h4>
-                    <div class="level-label">60%</div>
-                </div>
-                <div class="skill-card">
-                    <img src="./assets/java.png" loading="lazy" class="skill-icon" alt="Java" />
-                    <h4>Java</h4>
-                    <div class="level-label">75%</div>
-                </div>
-                <div class="skill-card">
-                    <img src="./assets/node js.png" loading="lazy" class="skill-icon" alt="Node JS" />
-                    <h4>Node JS</h4>
-                    <div class="level-label">70%</div>
-                </div>
-                <div class="skill-card">
-                    <img src="./assets/github.png" loading="lazy" class="skill-icon" alt="GitHub" />
-                    <h4>GitHub</h4>
-                    <div class="level-label">70%</div>
-                </div>
+        <div class="skills-track">
+            <!-- 1st Set -->
+            <div class="skill-card">
+                <img src="./assets/html.png" loading="lazy" class="skill-icon" alt="HTML" />
+                <h4>HTML5</h4>
             </div>
+            <div class="skill-card">
+                <img src="./assets/css.png" loading="lazy" class="skill-icon" alt="CSS" />
+                <h4>CSS3</h4>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/javascript.png" loading="lazy" class="skill-icon" alt="JavaScript" />
+                <h4>JavaScript</h4>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/bootstrap.png" loading="lazy" class="skill-icon" alt="Bootstrap" />
+                <h4>Bootstrap</h4>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/react.png" loading="lazy" class="skill-icon" alt="React" />
+                <h4>React</h4>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/figma.png" loading="lazy" class="skill-icon" alt="Figma" />
+                <h4>Figma</h4>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/java.png" loading="lazy" class="skill-icon" alt="Java" />
+                <h4>Java</h4>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/node js.png" loading="lazy" class="skill-icon" alt="Node JS" />
+                <h4>Node JS</h4>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/github.png" loading="lazy" class="skill-icon" alt="GitHub" />
+                <h4>GitHub</h4>
+            </div>
+
+            <!-- Duplicate Set for Sequential Loop -->
+            <div class="skill-card">
+                <img src="./assets/html.png" loading="lazy" class="skill-icon" alt="HTML" />
+                <h4>HTML5</h4>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/css.png" loading="lazy" class="skill-icon" alt="CSS" />
+                <h4>CSS3</h4>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/javascript.png" loading="lazy" class="skill-icon" alt="JavaScript" />
+                <h4>JavaScript</h4>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/bootstrap.png" loading="lazy" class="skill-icon" alt="Bootstrap" />
+                <h4>Bootstrap</h4>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/react.png" loading="lazy" class="skill-icon" alt="React" />
+                <h4>React</h4>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/figma.png" loading="lazy" class="skill-icon" alt="Figma" />
+                <h4>Figma</h4>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/java.png" loading="lazy" class="skill-icon" alt="Java" />
+                <h4>Java</h4>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/node js.png" loading="lazy" class="skill-icon" alt="Node JS" />
+                <h4>Node JS</h4>
+            </div>
+            <div class="skill-card">
+                <img src="./assets/github.png" loading="lazy" class="skill-icon" alt="GitHub" />
+                <h4>GitHub</h4>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -190,71 +168,71 @@
     <!-- Project card -->
 
     <section id="projects" class="projects-section">
-        <h2 class="section-title">My Projects</h2>
+        <div class="section-header">
+            <span class="section-subtitle">Selected Works</span>
+            <h2 class="section-title">Featured Projects</h2>
+        </div>
         <div class="projects-grid">
+            <!-- Project 1 -->
             <div class="project-card">
-                <img src="./assets/Oneplus.png" loading="lazy" alt="Project 1" />
+                <div class="project-image">
+                    <img src="./assets/project-arjun.png" loading="lazy" alt="Arjun Portfolio" />
+                </div>
                 <div class="project-info">
-                    <h3>Fashion Store</h3>
-                    <p>HTML, CSS, Bootstrap</p>
-                    <a href="https://sreenish-hub.github.io/oneplus-5g/" target="_blank">View Project</a>
+                    <h3>Arjun Portfolio</h3>
+                    <p>A high-performance portfolio website built for a creative professional. <strong>Result: Increased client inquiries by 40%.</strong></p>
+                    <a href="https://sreenish-hub.github.io/Arjun-portfolio/" target="_blank" class="project-link">
+                        <span>View Live</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
 
+            <!-- Project 2 -->
             <div class="project-card">
-                <img src="./assets/Youtube.png" loading="lazy" alt="Project 2" />
+                <div class="project-image">
+                    <img src="./assets/project-luxora.png" loading="lazy" alt="Luxora AI" />
+                </div>
                 <div class="project-info">
-                    <h3>Learning Institute</h3>
-                    <p>HTML, CSS, JS</p>
-                    <a href=" https://sreenish-hub.github.io/YouTubeclone/" target="_blank">View Project</a>
+                    <h3>Luxora AI</h3>
+                    <p>Modern landing page for an AI enterprise solution. <strong>Features 98/100 Performance Score and glassmorphism UI.</strong></p>
+                    <a href="https://sreenish-hub.github.io/luxora-ai-landing-page/" target="_blank" class="project-link">
+                        <span>View Live</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
 
+            <!-- Project 3 -->
             <div class="project-card">
-                <img src="./assets/portfolio.png" loading="lazy" alt="Project 3" />
+                <div class="project-image">
+                    <img src="./assets/project-throughglass.png" loading="lazy" alt="ThroughGlass" />
+                </div>
                 <div class="project-info">
-                    <h3>Portfolio Website</h3>
-                    <p>HTML, CSS, JS</p>
-                    <a href="#" target="_blank">View Project</a>
+                    <h3>ThroughGlass</h3>
+                    <p>Cinematic digital storefront for photographers. <strong>Designed for maximum visual impact and smooth user flow.</strong></p>
+                    <a href="https://throughglass.vercel.app/" target="_blank" class="project-link">
+                        <span>View Live</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
-
-            <div class="project-card">
-                <img src="./assets/go bus.png" loading="lazy" alt="Project 3" />
-                <div class="project-info">
-                    <h3>Bus Booking</h3>
-                    <p>HTML, CSS, JS</p>
-                    <a href="#" target="_blank">View Project</a>
-                </div>
-            </div>
-
-
-            <!-- Add more cards if needed -->
         </div>
     </section>
 
     <!-- contact -->
-   <form class="contact-form" action="https://formsubmit.co/el/faxeko" method="POST">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://sreenish-hub.github.io/portfolio/thanks.html">
-
-    <div class="form-group">
-        <input type="text" id="name" name="name" placeholder="Your Name" required />
-    </div>
-    <div class="form-group">
-        <input type="email" id="email" name="email" placeholder="Your Email" required />
-    </div>
-    <div class="form-group">
-        <textarea rows="5" id="message" name="message" placeholder="Your Message" required></textarea>
-    </div>
-    <div class="button-group">
-        <button type="submit" class="btn outline">Send Email</button>
-        
-        <a href="https://wa.me/918590466462" target="_blank" class="btn primary" style="text-decoration:none; display:inline-block; text-align:center;">
-            Chat on WhatsApp
-        </a>
-    </div>
-</form>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2>Let's Work Together</h2>
+            <p>Ready to launch a high-performing website? I am currently accepting new projects. Let's discuss how I can help you.</p>
+            <div class="contact-methods">
+                <a href="https://www.linkedin.com/in/sreenish-148a64365" target="_blank" class="contact-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/sreenish-hub/" target="_blank" class="contact-btn"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.instagram.com/sreenishh_" target="_blank" class="contact-btn"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
 
@@ -285,14 +263,7 @@
 
 
     <script src="https://unpkg.com/scrollreveal"></script>
-   <script>
-    // Keep only the animation code
-    ScrollReveal().reveal('.hero-left', { origin: 'left', distance: '50px', duration: 1000, delay: 300 });
-    ScrollReveal().reveal('.hero-right', { origin: 'right', distance: '50px', duration: 1000, delay: 500 });
-    ScrollReveal().reveal('.navbar', { origin: 'top', distance: '20px', duration: 800, delay: 200 });
-    ScrollReveal().reveal('.about-img', { origin: 'left', distance: '50px', duration: 1000, delay: 200 });
-    ScrollReveal().reveal('.about-content', { origin: 'right', distance: '50px', duration: 1000, delay: 300 });
-</script>
+    <script src="script.js"></script>
 </body>
 
 </html>
