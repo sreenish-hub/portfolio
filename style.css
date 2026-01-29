@@ -599,18 +599,62 @@ section {
 }
 
 /* Responsive Alignment */
+/* Responsive Alignment */
 @media (max-width: 992px) {
-    .hero { text-align: left; }
-    .projects-grid { grid-template-columns: repeat(2, 1fr); }
-    .about-grid { grid-template-columns: 1fr; gap: 40px; }
-    .about-img { aspect-ratio: 16/9; }
+    :root {
+        --space-section: 80px; /* Reduced section spacing */
+    }
+    
+    .hero { 
+        text-align: center; /* Center align on tablet/mobile for better balance */
+        padding-top: 120px;
+    }
+    
+    .hero-content {
+        margin: 0 auto;
+    }
+    
+    .projects-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    
+    .about-grid { 
+        grid-template-columns: 1fr; 
+        gap: 40px; 
+        text-align: center; /* Center align about content */
+    }
+    
+    .about-details {
+        justify-content: center;
+        text-align: left; /* Keep details aligned left but centered block */
+        display: inline-grid;
+    }
+
+    .interests {
+        justify-content: center;
+    }
+    
+    .about-img { 
+        aspect-ratio: 16/10; 
+        max-width: 600px;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 768px) {
+    :root {
+        --space-section: 60px; /* Tighter spacing on mobile */
+    }
+
     .section-header { text-align: center; }
-    .projects-grid { grid-template-columns: 1fr; max-width: 450px; margin: 0 auto; }
     
-    .logo { z-index: 1001; } /* Ensure logo stays above menu bg */
+    .projects-grid { 
+        grid-template-columns: 1fr; 
+        max-width: 100%; /* Use full width with padding */
+        padding: 0; /* Container has padding, grid doesn't need extra on mobile if 1 column */
+    }
+    
+    .logo { z-index: 1001; } 
     .menu-icon { display: block; z-index: 1001; }
     
     .nav-links {
@@ -629,11 +673,19 @@ section {
         gap: 32px;
     }
     
-    .nav-links li a { font-size: 1.5rem; }
+    .nav-links li a { 
+        font-size: 1.5rem; 
+        padding: 12px; /* Large tap targets */
+        display: block;
+    }
     
     #menu-toggle:checked ~ .nav-links { transform: translateX(0); }
     
-    .skills-track { grid-template-columns: repeat(2, 1fr); }
+    /* Removed stale skills-track grid rule, marquee works automatically */
     
+    .contact-container { padding: 40px 24px; }
     .contact-container h2 { font-size: 2rem; }
+    
+    .hero h1 { font-size: 2.5rem; } /* Explicit mobile font size */
+    .section-title { font-size: 2rem; }
 }

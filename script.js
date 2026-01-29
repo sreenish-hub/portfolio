@@ -1,11 +1,13 @@
 // Initialize ScrollReveal
 const sr = ScrollReveal({
     origin: 'bottom',
-    distance: '30px',
-    duration: 1000,
-    delay: 200,
-    easing: 'cubic-bezier(0.16, 1, 0.3, 1)', // Smooth ease-out
-    reset: false // Animations happen only once
+    distance: '20px', // Reduced distance for subtle effect
+    duration: 800, // Faster duration
+    delay: 100,
+    easing: 'cubic-bezier(0.16, 1, 0.3, 1)', 
+    reset: false,
+    mobile: true, // Keep enabled but optimized
+    viewFactor: 0.2
 });
 
 // Navbar
